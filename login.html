@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Sign-In</title>
+    
+    <!-- Link to styles.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="container">
+        
+        <form action="login.php" method="post" id="registerForm">
+            <h2>REGISTRATION FORM</h2>
+            <div class="main">
+                <div class="input-div">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="full-name" placeholder="Enter name" id="full-name" required>
+                </div>
+                <div class="input-div">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Enter username" id="username" required>
+                </div>
+                <div class="input-div">
+                    <label for="emailId">Email</label>
+                    <input type="text" name="email" placeholder="Enter email" id="emailId" required>
+                </div>
+                <div class="input-div">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter password" id="password" required>
+                </div>
+                <div class="input-div">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" placeholder="Enter password" id="confirm-password" required>
+                </div>
+            </div>
+            <button type="submit">Register</button>
+            <div class="toggle-text" id="switchToSignIn">Already have an account? Sign In</div>
+        </form>
+
+    
+        <form action="login.php" method="post" id="signInForm" style="display:none;">
+            <h2>SIGN IN</h2>
+            <div class="main">
+                <div class="input-div">
+                    <label for="signInEmail">Email</label>
+                    <input type="text" name="signInEmail" placeholder="Enter email" id="signInEmail" required>
+                </div>
+                <div class="input-div">
+                    <label for="signInPassword">Password</label>
+                    <input type="password" name="signInPassword" placeholder="Enter password" id="signInPassword" required>
+                </div>
+                <div class="input-div">
+                    <a href="forgot_password.html" class="forgot-password">Forgot Password?</a>
+                </div>
+            </div>
+            <button type="submit">Sign In</button>
+            <div class="toggle-text" id="switchToRegister">Don't have an account? Register</div>
+        </form>
+        
+    </div>
+
+    <!-- Link to script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
